@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	FoodZax.com
+</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
+
+		
+
+
+
+
+</head>
+
+<style>
+
+	
+
+
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+
+
+
+
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+
+
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+   font-size: 17px;
+}
+
+
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #9FFAD0    ;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+<div class="header">
+  <h1><b><font face="Albertina">Food Zax</font></b><img src="https://www.telegraph.co.uk/content/dam/food-and-drink/2016/04/27/Chicken_rice_meal_copy_trans_NvBQzQNjv4BqQ99bcywK3ovn70OLmYu7RvcGjdxbBaRy7TzoQO1nXvA.png" style="width:110px;"></h1>
+  <p><font size="5"><font face="Albertina">Good Food Good For Your Health<img src="https://bprtp01.intouchposonline.com/mobile/www/img/loader.gif" style="width:110px;"></font></font></p>
+</div>
+
+<div class="topnav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+   <input type="text" placeholder="Search..">
+  <a href="#" style="float:right">Cart🛒</a>
+  </div>
+
+
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><font face="Albertina">WHAT IS BIRYANI</h2>
+      <h5>Title description,  7, 2020</font></h5>
+      
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.thecuriouschickpea.com/wp-content/uploads/2019/01/Sindhi-Vegetable-Biryani-7.jpg" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://i.pinimg.com/736x/2b/0f/70/2b0f707b377b3428a1d6ea3fdbcc5b69.jpg" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://butteryourbiscuit.com/wp-content/uploads/2018/08/restaurant-style-mexican-rice-1.jpeg" alt="Mountains" style="width:100%">
+		</div>
+	 </div>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      
+      <p style="font-family:Roman;">
+							Biryani (pronounced [bɪr.jaːniː])is a mixed rice dish with its origins among the Muslims of the Indian subcontinent.
+							It can be compared to mixing a curry,later combining it with semi cooked rice separately.
+							This dish is especially popular throughout the Indian subcontinent,as well as among the diaspora from the region.
+							It is also prepared in other regions such as Iraq.
+							It is made with Indian spices,rice,meat(chicken,goat,pork,lamb,prawn,or fish)vegetables or eggs.
+							The word 'biryani' is derived from a Persian word, birian, which means fried before cooking.
+							It is one the most popular dishes which has acquired a niche for itself in South Asian cuisine.
+							The exact origin of the dish is uncertain.In North India,different,varieties of biryani developed in the Muslim centersof Delhi (Mughlai cuisine),Lucknow (Awadhi cuisine) and other small principalities.
+							In South India, where rice is more widely used as a staple food.several distinct ,varieties of biryani emerged,from Telangana(Hyderabad) Tamil Nadu (Ambur, Thanjavur, Chettinad, Salem, Dindigal),Kerala (Malabar),and Karnataka,where Muslim communities were present.
+							
+		</p>
+    </div>
+    <div class="card">
+      <h2><font face="Albertina">Varities Of Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+		<marquee behavior="alternate" onmouseover="stop()" onmouseout="start()" direction="left">
+		<img src="https://cdn.sharechat.com/8611fad5-58a3-4639-8cbd-7efeb42bfa57-12a321e9-1ffb-4534-988a-e0850a76e03e.gif" style=" height:350px;Width:300px;">
+		<img src="https://i.makeagif.com/media/8-09-2015/ty9wmp.gif" style=" height:350px;Width:300px;">
+		<img src="https://d2f0ora2gkri0g.cloudfront.net/bkpam2357012_muttonbiryanicopy_1.jpg" style="width:350px; height:350px;">
+		<img src="https://i.imgur.com/y2QYNew.jpg" style=" height:350px;Width:300px;"></marquee>
+		
+      <p style="font-family:Roman;">There are Some Type Of Biryani Present in Kolkata<br>
+				Kachhi Biryani.Hydrabadi Biryani.Kolkata Special.Tehari Biryani.Veg Biryani</p>
+    </div>
+	
+	<div class="card">
+      <h2><font face="Albertina">Kachhi Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	   <div class="row">
+		<div class="column">
+			<img src="https://hungerfeel.com/wp-content/uploads/2019/01/chicken-biryani.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/chettinad-chicken-biryani-3.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://hungerfeel.com/wp-content/uploads/2019/01/chicken-biryani.png" alt="Forest" style="width:100%">
+		</div>
+		
+	 </div>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+		
+	  
+     <p style="font-family:Roman;">
+      <p style="font-family:Roman;">
+	  
+				For kacchi biryani,raw marinated meat is layered with raw rice before being cooked together.
+				It is also known as kacchi yeqni.It is typically cooked with chicken or goat meat and occasionally with fish or prawns.
+				The dish is cooked layered with the meat and a dahi-based marinade at the bottom of the cooking pot.
+				A layer of rice (usually basmati rice or chinigura rice) is placed over it. Potatoes are often added before adding the rice layer.
+				The pot is usually sealed (typically with wheat dough) to allow it to cook in its own steam and it is not opened until it is ready to serve.
+	  
+	  
+	  
+	  
+	  </p>
+    </div>
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Hydrabadi Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-hyderabadi-biryani-cuisine-indian-chicken-meat-fried-rice-spices-spicy-veggies-street-food-dish-recipe-3.png" alt="Kachhi" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-hyderabadi-biryani-cuisine-indian-chicken-meat-fried-rice-spices-spicy-veggies-street-food-dish-recipe-3.png" alt="Kachhi" alt="Snow" style="width:100%">
+		</div>
+		
+		
+		<div class="column">
+			<img src="https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-hyderabadi-biryani-cuisine-indian-chicken-meat-fried-rice-spices-spicy-veggies-street-food-dish-recipe-5-400x403.png" alt="Forest" style="width:100%">
+		</div>
+		
+	 </div>
+
+	  
+	  
+	  
+		
+		
+      <p style="font-family:Roman;">
+      <p style="font-family:Roman;">
+	  
+				Hyderabadi Biryani is a popular variety of Biryani. The Hyderabadi Biryani is so named as it is seen mainly in the city of Hyderabad, India.
+				The blending of mughlai and Andhra cuisines in the kitchen of the Nizam (leader of the historical Hyderabad state), resulted in a dish called the Hyderabad Biryani.
+				It, like other biryanis, is made using Basmati rice which is only found on the Indian subcontinent. The spices and other ingredients remain the same, however the method of preparation involves more time.
+				It is usually accompanied with Dahi ki Chutney, Raita (a yogurt dish) or Mirchi ka Salan.
+				There are 2 styles of preparing this variety. The Katchi Biryani is prepared with the Katchi Yakhni method (with raw gravy).
+				The raw meat is marinated in curd and cooked only by the dum, or the baking process, which is done with rice.
+				This is a challenging process as it requires meticulously measured time and heat to avoid overcooking or undercooking the meat.
+				In Pakki Biryani, where the meat is cooked with all the accompanying spices and then the rice is simmered with the resultant gravy redolent of mace, 
+				ittar and kewra in a sealed vessel with saffron and cardamom. It is accompanied by side dishes like Mirchi ka Salan, Dhansak and Bagara Baingan.
+				The meat used in the preparation is usually mutton, beef popularly called Kalyani Biryani or, less frequently, chicken.
+				There is also a vegetarian version of the Hyderabadi Biryani..
+	
+	  
+	  
+	  
+	  </p>
+    </div>
+	
+	
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Kolkata Special</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-hyderabadi-biryani-cuisine-indian-chicken-meat-fried-rice-spices-spicy-veggies-street-food-dish-recipe-1.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.pngkey.com/png/full/245-2458558_best-biryani.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.pngkey.com/png/full/245-2458558_best-biryani.png" alt="Forest" style="width:100%">
+		</div>
+		
+	 </div>
+	  
+	  
+	  
+	  
+		
+		
+      <p style="font-family:Roman;">
+      <p style="font-family:Roman;">
+	  
+				Kolkata Chiken Biryani | Bengali Style Biryani | Murg Dam Biryani
+				Chicken Biryani Chicken Chaap Food Photography Styling Kolkata Chicken Biryani or Bengali style Chicken Dum Biryani
+				is an epitome of indulgence in delicate delicious food.
+				Biryani itself is a medley of rice, meat and spices though it has (probably) 1000 variations across the world.
+				Typical Kolkata biryani which is adopted from Awadhi style Biryani offers fragrant Dehradun rice, mild flavoured spices, 
+				spicy chicken, aroma of metha attar & kewra water and richness from desi ghee. And of course well-seasoned potato and hard
+				boiled eggs are what makes any Kolkata Biryani standout in the crowd of biryani world.
+				As I mentioned in my Chicken Chaap post Kolkata Mughlai cuisine is heavily influenced by Awadh,Uttar Pradesh.When nawab of
+				Awadh was sent to Kolkata in the period of British Raj he had brought his own cooks and servers along with his own crew. And Biryani,
+				Chaap and various kebabs were regularly cooked preparations for his highness in their newly setup special kitchen. But with the controlled 
+				cash flow(from British Governor)it became quite a challenge for the royal chefs to maintain unlimited supply of biryani-chaap for happiness of nawab.
+				So they had introduced boiled and well seasoned potato and hard boiled eggs in biryani along with reduced amount of meat. 
+				Thus biryani looks full and sufficient and royal which has turned into famous Kolkata Dum Biryani.
+	  
+	  
+	  </p>
+    </div>
+	
+	
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Tehari Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.sshyderabadbiryani.com/img/welcome-right-imgg.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.sshyderabadbiryani.com/img/welcome-right-imgg.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.nicepng.com/png/full/914-9141005_about-chicken-biryani-ad.png" alt="Forest" style="width:100%">
+		</div>
+		
+	 </div>
+	  
+	  
+	  
+	  
+	  
+	  
+		
+		
+	  
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Tahri (also tehri, tehari or tayari) is a yellow rice dish in Awadhi cuisine. 
+				Spices are added to plain cooked rice for flavor and colour. In one version of Tehri, potatoes are added to the rice.
+				[1] This dish is most popular in Hyderabad
+				Tehri and tehari are variants on the name given to the vegetarian version of biryani.
+				It was developed for the Hindu bookkeepers of the Muslim Nawab rulers in South Asia.
+				[2]Tehri became more popular during the Second World War when meat prices increased substantially and potato became the popular substitute in biryani.
+				[3] It is prepared by adding the potatoes to the rice, as opposed to the traditional method of preparing biryani, in which the rice is added to the meat.
+				In Kashmir, tehari is sold as street food.
+				Biryani, Pulao and Tehri, belong to a family of primarily South Asian rice dishes made with spices, rice (usually basmati) and meat/vegetables.
+				Since their method of preparation is different, their outcome is also different.
+				Tahari is usually  a mixed rice recipe usually mixed with either mutton or vegetables.It can also be named as mutton rice recipe.
+				Mutton Tahari or tehari in this post is rice mixed with mutton or meat and cooked in some aromatic and flavorful spices.
+				Teheri recipe or tahari recipe is something which can take its level below biryani and above Pulao or bagara khana.
+	
+	  
+	  
+	  
+	  </p>
+    </div>
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Veg Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.nicepng.com/png/full/964-9642029_veg-biryani-biryani.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://hungerfeel.com/wp-content/uploads/2019/02/veg-biryani1-600x600.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.nicepng.com/png/full/964-9642029_veg-biryani-biryani.png" alt="Snow" style="width:100%">
+		</div>
+		
+	 </div>
+	  
+		
+		
+	  
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Vegetable biryani is an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices.
+				Traditionally Biryani was made by dum cooking marinated meat with basmati rice & spices.
+				Making a vegetarian version becomes much simpler as the veggies need no marination.
+				vegetable Biryani is one of the most famous traditional recipes made with some easily available ingredients.
+				This irresistible delicacy makes for a perfect wholesome meal, made with rice, spices and veggies, biryani is often prepared for special occasion and festivals.
+				It tastes best when served with raita, salad and sweets. Synonymous with good food and celebrations. biryani is often served with shorba (gravy) and kebabs.
+				It's a perfect party recipe that can also be made in a pressure cooker without layering. This biryani recipe is the traditional way of making biryani in a pot, sealed with dough and slow-cooked.
+				We suggest you follow the authentic way of preparing this dish as it tastes even better and aromatic when you prepare it traditionally.
+				To make it interesting you can add your own twist to this recipe by adding flavours as per your palate preference.
+				Also, to make it more aromatic add some saffron strings and some kewra water, this will make the biryani amazingly delicious.
+	  
+	  
+	  </p>
+    </div>
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Alu Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/Afgan-Boneless-Biryani-1.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/chettinad-chicken-biryani-3.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/Afgan-Boneless-Biryani-1.png" alt="Snow" style="width:100%">
+		</div>
+	 </div>
+		
+		
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Kolkata style Aloo Biryani is an lightly spiced rice dish made with aromatic basmati rice, sallow fried baby potatoes and mild masalas making it a fulfilling meal.
+				The Kolkata Biryani is a sub variant of the Lucknawi-style biryani. Yes, Kolkata Biryani isn’t a native of the city, but a modified version of a Lucknawi variant. 
+				The flavor focus is on the meat or the vegetables of the dish hence the spices are very light in this Biryani, Kolkata Biryani light, low on essence and color, and mildly spiced – unlike Hydrabadi Biryani, using just the right amount of spices to attain the flavor an
+				There are many theories as to why potatoes were added to the dish. One states that potatoes were substituted for meat, as it makes a filling dish, when meat was not affordable or available.
+				There is also a counter theory that potato was an exotic vegetable at the time so was added to the dish.
+				Whatever be the reason this Potato makes for a very flavorful and fulfilling Biryani.
+
+
+	  </p>
+    </div>
+	
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Egg Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://biryaniblues.com/assets/frontend/images/home-biryani.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.pngkit.com/png/full/245-2458368_egg-biryani-vegetable.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://biryaniblues.com/assets/frontend/images/home-biryani.png" alt="Snow" style="width:100%">
+		</div>
+	 </div>
+		
+		
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Biryani is the trademark dish and comes from the Indian city Hyderabad and have become a fundamental part of Hyderabadi delicacies being passed by the rulers of Nizam of Deccan. Egg biryani too holds a powerful place in the biryani family only using eggs in place of meat or chicken preparing it with all the common traditional spices. This is an ideal dish for celebrations; dinner and lunch offered hot with raita, mirch ka salan, green salad and thinly sliced onions and lemon wedges.
+				Egg biryani is ideal flavoured rice with attractive aroma and full of richness. This food is among the best dishes to treat to people who don't eat meat but appreciate eating eggs. Egg biryani one of the simplest, delightful biryani that can make at home with very little ingredients. Best part when running short time and want a special meal then it’s the best one. It is one among the original feel and taste of the true Mughlai Khana.
+				Biryani is a favourite rice dish through the Indian sub-continent. It's a spectacular recipe of a range of spices, saffron and caramelized onions, and has become the most aromatic rice possibly cooked. To all its attractiveness, this is a dish suit for being offered in the royal court.
+				Biryani is not challenging in any way to prepare like many think. It’s just bit of time-consuming and it also requires that little extra special attention when we do it. The cooking procedure for Biryani shows up an excellence of cooking art.
+				Eggs are among the most comfort foods accessible all-around year that not only offers yummy foods on their own but is also an important ingredient for a lot of baked items and sauces. Eggs consist a yellow yolk and translucent white surrounded by a safety layer that can be white or brown, depending on the kind of the chicken. The shell's colour isn't linked to the quality or nutrients of the egg. Eggs keep an important position not just for its amazing taste and nutritional content but provides several distinctive features in cooking which includes emulsification, coagulation, foaming, and browning.
+
+				Benefit:
+				Eggs are an excellent source of protein and consist of minerals and vitamins. Eggs are the ideal option included in a healthy balanced diet. But don't forget that it's a good idea to eat as varied a diet as possible. It indicates that we should be seeking to eat various foods every week to obtain the wide variety of nutrients we require. Eggs are an incredibly good supply of selenium, iodine, phosphorus, vitamin B2, molybdenum, vitamin A, vitamin B5, vitamin B12 and vitamin D.
+
+	  </p>
+    </div>
+	
+	
+	
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Masroom Biryani</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/Sattvic-1.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/veg-biryani-1.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/Sattvic-1.png" alt="Snow" style="width:100%">
+		</div>
+	 </div>
+		
+		
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Mushroom Biryani is a delectable North Indian recipe that can be consumed as a full course lunch or dinner meal.
+				This scrumptious recipe is prepared using simple ingredients like basmati rice, mushroom, tomatoes, ginger garlic paste, green chillies, yogurt and a melange of Indian spices which make this dish super delicious and hard to resist.
+				It can be made easily at home without putting much effort. This main dish recipe stands fairly on health grounds as it contains button mushrooms that are really good for our immunity. Mushrooms are very beneficial in reducing the risk of heart diseases and cancer.
+				Apart from that, it is also a rich source of several vitamins and minerals. It is apt to serve on the occasions like kitty party, pot luck, buffet, anniversary, birthday, lunch or on a family get-together. You can serve this mouth-watering dish with raita or mint chutney.
+				This recipe is going to become your family's favourite once you serve it in your next family get together. So, go ahead and try this lip-smacking dish for your loved ones and be ready to get showered with compliments. Enjoy!
+
+
+	  </p>
+    </div>
+	
+	
+	
+	
+	<div class="card">
+      <h2>Fish Biryani</h2>
+      <h5><font face="Albertina">Title description, March 2, 2020</font></h5>
+	  
+	  
+	  <div class="row">
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/kacche-gosht-ki-biryani-1.png" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/lamb-biryani-1.png" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://www.gourmetfoodbowl.com/wp-content/uploads/2019/01/Chiken-Biryani-1.png" alt="Snow" style="width:100%">
+		</div>
+	 </div>
+		
+		
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Fish biryani is made of fish of your choice marinated with spices, fresh herbs and cooked with rice into a luxurious biryani.
+				Fish biryani is an awesome Biryani dish in a world where Biryanis are mostly associated with either mutton or chicken.
+
+				Fish is a high protein rich food provides us with omega-3 fatty acids and vitamin D.
+				This dish is perfect for all nonveg lovers who love biryani but due to cholesterol avoid it. Taste and flavor of fish enhance this dish which everyone will love to have more and more.
+				If you think Biryani can only be made with chicken or mutton, you are in for a surprise. You can make scrumptious Fish Biryani and in half the time! Since fish takes very little time to cook, making this biryani is very easy.
+				You can also use a bony fish in making this rice recipe, but since it is easy to eat and handle fillets, we have used it in this recipe. 
+				If you want to add a South Indian touch to your biryani, use a few teaspoons of turmeric water and some curry leaves. 
+				To add a touch of Bengal, you can make it in mustard oil and sprinkle a little mustard powder in place of garam masala. 
+				Fish Biryani is ideal for brunches, kitty parties, festivals and celebrations. It is a complete meal in itself and goes well with any raita or salad of your choice. Do try out this super-easy biryani recipe.
+	  </p>
+    </div>
+	
+	
+	
+	
+	<div class="card">
+      <h2><font face="Albertina">Some importent Notes</h2>
+      <h5>Title description, March 2, 2020</font></h5>
+	  
+	  
+		<div class="row">
+		<div class="column">
+			<img src="https://i.pinimg.com/originals/70/45/fe/7045fe04d9744db3a94c67392563bc49.jpg" alt="Snow" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://i.pinimg.com/originals/70/45/fe/7045fe04d9744db3a94c67392563bc49.jpg" alt="Forest" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="https://i.pinimg.com/originals/70/45/fe/7045fe04d9744db3a94c67392563bc49.jpg" alt="Snow" style="width:100%">
+		</div>
+	 </div>
+		
+		<button class="btn" style="width:100%"><i class="fa fa-download"></i><a href="https://www.fortunefoods.com/sites/default/files/Mutton%20biryani%20.pdf"> Download</a></button>
+		
+			
+			
+      <p style="font-family:Roman;"></p>
+      <p style="font-family:Roman;">
+	  
+				Under the importent notes i am adding some Biryani Pdf where to every person get Biryani Pdf.
+				In the Pdf all Biryani ingridients, How to make Biryani every-Thing Mention.
+				Jan 22, 2020
+	  
+	  
+	  </p>
+    </div>
+	<div class="card">
+			<marquee behavior="alternate" onmouseover="stop()" onmouseout="start()" direction="left">
+			<img src="https://3.bp.blogspot.com/-npb6hh2MeLY/V0GqO52lZzI/AAAAAAAAA0E/SYsTDWsi8KMdvQ7ed2Uq2ILWHMl4NE8bgCKgB/s1600/biryani.gif" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://d2f0ora2gkri0g.cloudfront.net/bkpam2357012_muttonbiryanicopy_1.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/mxcadmnxse0cfbork1qm" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://www.foodfusion.com/wp-content/uploads/2018/04/Handi-Biryani-Recipe-by-Food-fusion-2.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://media.giphy.com/media/g8rEwOqIStrBC/giphy.gif" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://paradisefoodcourt.files.wordpress.com/2015/05/im1.jpg" alt="image" style="width:250px;height:250px;">
+			<img src="https://www.secondrecipe.com/wp-content/uploads/2019/11/chicken-biryani.jpg" alt="biryani" style="width:250px;height:250px;"> 
+			<img src="https://zaykarecipes.com/eng/wp-content/uploads/2019/09/yakhni-pulao.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://tandooripizza.net/wp-content/uploads/2018/11/egg-biryani.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://www.yummytummyaarthi.com/wp-content/uploads/2013/07/1-1.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://3.bp.blogspot.com/-q-ogA4Z9ZbE/VcY3dwPO14I/AAAAAAABE0k/fJcZ4d4Aoyc/s1600/20150729_133657.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://www.expressomagazine.com/wp-content/uploads/2019/12/beeryani-2.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://theyummydelights.com/wp-content/uploads/2018/05/chicken-biryani.jpg" alt="biryani" style="width:250px;height:250px;">
+			<img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/01/Chicken-Biryani-500x500.jpg" alt="biryani" style="width:250px;height:250px;">
+			</marquee>
+			
+			
+			
+			
+	</div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+     <center> <h2><font face="Albertina">About Me</h2></center>
+     <center> <img src="https://i.ibb.co/kyLfc8k/IMG-20200205-WA0001.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:180px;width:180px;"></center>
+      <p><b>I am Rajkumar Das.I am stared This Business 2020</font></b></p>
+    </div>
+	
+	 <div class="card">
+     <center> <h2><font face="Albertina">Updated News</h2>
+      <img src="https://qph.fs.quoracdn.net/main-qimg-977af75e513fb2757b418781d9c5b02f" style="height:200px;width:200px;">
+      <p><b>Best Biryani Masala Ever!😋</font></b></p></center>
+    </div>
+	
+	<div class="card">
+    <center>  <h2><font face="Albertina">Home Made Biryani Masala</h2>
+      <img src="https://5.imimg.com/data5/IE/ON/MY-2654179/gram-masala-500x500.png" style="height:200px;width:200px;">
+      <p><b>Best Biryani Masala Ever!😋</font></b></p></center>
+    </div>
+	
+	<div class="card">
+	 <center><h2><font face="Albertina">Home Made Biryani Masala</h2>
+      <img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/vxf0jKsITLQTxm5F41eCPQmPG6Q=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/WIISTNU3LAI6JEEC4PH3QC5TYM.jpg" style="height:200px;width:200px;">
+      <p><b>Best Biryani Masala Ever!😋</font></b></p></center>
+    </div>
+	
+    <div class="card">
+    <center>  <h3><font face="Albertina">Best Biryani Rice </font></h3>
+      <img src="https://d2jy9m11ewc1wc.cloudfront.net/sites/default/files/biryani-special.png" style="height:200px;width:200px;">
+      <img src="https://d2jy9m11ewc1wc.cloudfront.net/sites/default/files/super-bamati-rice.png" style="height:200px;width:200px;">
+	  <img src="https://www.daawat.com/sites/all/themes/ltfoods/images/Biryani-Pack-Shot-Inside.png" style="height:200px;width:200px;">
+	  <img src="https://www.patanjaliayurved.net/assets/product_images/400x500/1540011926diwalidhanashree.png" style="height:200px;width:200px;">
+      <img src="https://www.freepnglogos.com/uploads/rice-png/rice-traditional-rices-26.png" style="height:200px;width:200px;"></center>
+    </div>
+	
+	 <div class="card">
+     <center> <h3><font face="Albertina">Biryani Quality Oil</font></h3>
+      <img src="https://5.imimg.com/data5/LW/MR/MY-37705942/rizola_1000p_mockup-500x500.png" style="height:200px;width:200px;">
+	  <img src="https://www.homsist.com/wp-content/uploads/2019/07/276757_5-dhara-refined-sunflower-oil.png" style="height:200px;width:200px;">
+	  <img src="https://5.imimg.com/data5/FS/PG/MY-37705942/sunlife_1ltr_pouch-500x500.png" style="height:200px;width:200px;">
+      <img src="https://demo.sidhagharpe.com/wp-content/uploads/2019/02/fortune-soya-health-refined-soyabean-oil-v-1-ltr.png" style="height:200px;width:200px;">
+      <img src="https://pngimage.net/wp-content/uploads/2018/06/oil-splash-png-4.png" style="height:200px;width:200px;"></center>
+    </div>
+	
+	 <div class="card">
+     <center> <h3><font face="Albertina">Best Biryani Award</font></h3>
+      <img src="https://assets.pbn.com/uploads/2019/01/gfa.jpg" style="height:200px;width:200px;">
+      <img src="https://pngriver.com/wp-content/uploads/2018/03/Download-Award-PNG-Clipart-For-Designing-Projects.png" style="height:200px;width:200px;">
+      <img src="https://makeyourbodywork.com/wp-content/uploads/sites/41/2013/03/Top-Food-Blog-Award.png" style="height:200px;width:200px;"></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Excepted #Other Biryani</h2>
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/02/egg-biryani.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Egg Biryani Is Very Famous Biryani Over Kolkata</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center>  <h2><font face="Albertina">Excepted #Other Biryani</h2>
+      <img src="https://1.bp.blogspot.com/-pDJKUJaDR5Q/U7IdQ1dsIkI/AAAAAAAAcfQ/qF03WIyoQvc/s1600/Paneer-biryani1.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Paneer Biryani Is Also Very Famous Biryani Over Kolkata</font></b></p></center>
+    </div>
+	
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Excepted #Other Biryani</h2>
+      <img src="https://www.indianveggiedelight.com/wp-content/uploads/2019/09/mushroom_biryani.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Masroom Biryani Is Also Very Famous Biryani Over Kolkata</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">History</h2>
+      <img src="https://www.thebetterindia.com/wp-content/uploads/2016/07/alchetron-Copy.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>However, the most popular story traces the origins of the dish to Mumtaz Mahal, Shah Jahan’s beautiful queen who inspired the Taj Mahal.</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center>  <h2><font face="Albertina">Some Pic</font></h2>
+      <img src="https://www.thebetterindia.com/wp-content/uploads/2016/07/Untitled-design-9.png" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+	  <img src="https://www.thebetterindia.com/wp-content/uploads/2016/07/icy-tales.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;"></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Best Biryani Hotel</h2>
+      <img src="https://im.indiatimes.in/content/2019/Feb/paradise_restaurant_1550998997_725x725.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Hydrabad</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Best Biryani Hotel</h2>
+      <img src="https://businessoptions.in/assets/uploads/franchise/gallery/c6gw1ieb8r71creqyhpn.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>New Delhi</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Best Biryani Hotel</h2>
+      <img src="https://image3.mouthshut.com/images/ImagesR/2015/10/Aminia-Rajarghar-New-Town-Kolkata-925766677-5942484-1.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Kolkata</font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Best Biryani Hotel</h2>
+      <img src="https://www.remotetraveler.com/wp-content/uploads/2014/11/Shiraz-Restaurant-Kolkata.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Odisha ଓରିସା </font></b></p></center>
+    </div>
+	
+	<div class="card">
+     <center> <h2><font face="Albertina">Best Biryani Hotel</h2>
+      <img src="https://content.jdmagicbox.com/comp/bangalore/p7/080pxx80.xx80.160301073102.b8p7/catalogue/paradise-biryani-jp-nagar-2nd-phase-bangalore-restaurants-3wjzt8w.jpg" alt="IMG-20200205-WA0001" border="0"  style="height:200px;width:200px;">
+      <p><b>Bangalore</font></b></p></center>
+    </div>
+	
+    <div class="card">
+      <center><h3><font face="Albertina">Follow Me</font></h3>
+			<img src="https://logodix.com/logo/35964.png" alt="Avatar" class="avatar"><br>
+			<img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png" alt="Avatar" class="avatar"><br>
+			<img src="https://www.edigitalagency.com.au/wp-content/uploads/new-instagram-logo-png-transparent-light.png" alt="Avatar" class="avatar"><br>
+			<img src="https://singoutintherain.com/wp-content/uploads/2019/02/pinterest-icon-1.png" alt="Avatar" class="avatar"><br></center>
+			
+	</div>
+	
+	
+	
+  </div>
+</div>
+
+
+<!-- its The Footer content-->
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>About Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Contact's</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Address</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Baidyabati</a></li>
+            <li><a href="#">Hooghly, 712222</a></li>
+            <li><a href="#">Police Station</a></li>
+            <li><a href="#">Serampore</a></li>
+            <li><a href="#">West Bengal,India </a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
